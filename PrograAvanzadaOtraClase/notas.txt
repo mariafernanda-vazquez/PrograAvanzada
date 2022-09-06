@@ -1,0 +1,119 @@
+cuando es un pal¡ndromo se debe de empezar por los extremos y checar si uno es diferente se tiene que terminar para no perder tanto tiempo 
+
+-Voltear una palabra
+    Se van intercambiando las posiciones 
+    tiene que ser hasta la mitad 
+    se tiene que tener una variable temporal, para que no se pierdan las letas char aux
+
+
+-Dada una frase, se tiene que invertir por palabra, sin usar otro arreglo
+Ejemplo: 
+    HOLA MUNDO CRUEL 
+    CRUEL MUNDO HOLA
+
+    Encuentro el espacio y tengo que invertir la palabra 
+    ya teniendo las palabras volteadas, se tienen que cambiar todos los caracteres 
+
+    dos ¡ndices 
+    inicio = el ¡ndice donde est  
+
+EJERCICIO 1
+    - En C++ se toma hasta el primer espacio 
+    - getline: leer toda la l¡nea completa (l¡nea por l¡nea)
+    - Checar si termina en un gui¢n 
+    - Como se tiene que concatenar 
+    - Funciones de la biblioteca 
+        - 
+    - Como obtenemos el £ltimo caracter
+    -Como comprobar si subcadena 
+    - Separar cadena, para poder contar las vocales, consonantes y n£meros
+    - 33 58 
+    - Para partir el string en palabras 
+
+
+
+
+    /*  
+Se detiene hasta que sean los 7 puntos 
+El dash solo va a aparecer al final de la l¡nea, y la palabra va a seguir, no va antes de una l¡nea de 7 puntos 
+30 cararcters por l¡nea 
+10 l¡neas 
+1. en min£sculas 
+2. numero de d¡gitos, vocales, y consonantes (tres variables)
+3. la palabra menor y la palabra mayor
+4. Si CS323 se tiene que imprimir el 1
+5. Contar cuantas s, h, 7 en min£scula */
+
+#include <iostream>
+#include <fstream>
+#include<string.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include <string>
+using namespace std;
+
+/*void minusculas(string &s){
+    for(int i=0; i<s.size();i++){
+        s[i]=tolower(s[i]);
+    }
+}  
+
+/*bool isVowel(char c){
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+        true;
+        }
+    else 
+        false;
+    }*/
+
+
+int main(int argc, char const *argv[])
+{
+    string s, o;
+    getline(cin,s);
+    while (s!="......."){
+        //minusculas(s);
+        /*if (s[s.size()-1]=='-'){
+            s.erase (s.size()-1, 1);
+        }
+        else 
+            s+=" ";*/
+        o+=s;
+    }
+
+    /*int v=0,c=0,d=0;
+    for(int j=0; j<o.size(); j++){
+        if(isVowel(o[j])){
+            v++;
+        }
+        else if (isalpha(o[i])){
+            c++;
+        }
+        else if (isdigit(o[i])){
+            d++;
+        }
+    }*/
+    cout<<o;
+
+    //cout<<d<<v<<c<<endl;
+    
+}
+
+
+Tipos de problemas: 
+    buscar elemento dentro de otro
+    invertir 
+        cifrar
+        codificar
+        encriptar
+        decodificar
+        desencriptar
+        conteo de frecuencia 
+        explresiones regulares (validar que una cadena sea igual a una expresion regular)
+            validar que sea un numero de telefono 
+            que sea un correo electronico 
+            curp 
+            placa 
+        comparacion de cadenas: que una este dentro de otra, que forme parte del conjunto
+        
+
